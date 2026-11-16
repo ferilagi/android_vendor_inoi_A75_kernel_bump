@@ -6,54 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/inoi/A75
 
 PRODUCT_COPY_FILES += \
-    vendor/inoi/A75/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/aee-commit:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aee-commit \
-    vendor/inoi/A75/proprietary/system_ext/etc/aee-config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aee-config \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_stub.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_volumes.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/custom.conf \
-    vendor/inoi/A75/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/aee_aed.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/aee_aed64.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/aee_aed64_v2.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64_v2.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/batterywarning.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/batterywarning.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/bootlogoupdater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bootlogoupdater.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/consyslogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/consyslogger.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/emdlogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/emdlogger.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/hw/init.aee.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/init.aee.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/hw/init.usb.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/init.usb.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/hw/meta_init.system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/meta_init.system.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/hw/vendor_init_as_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/vendor_init_as_system.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/init.lbs_dbg.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lbs_dbg.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/kpoc_charger.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/loghidlsysservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/loghidlsysservice.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/mdlogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mdlogger.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/mediaserver_dynamic.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mediaserver_dynamic.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/mobile_log_d.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mobile_log_d.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/mtk-plpath-utils.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mtk-plpath-utils.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/netdiag.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/netdiag.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/init/terserver.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/terserver.rc \
-    vendor/inoi/A75/proprietary/system_ext/etc/mtklog-config.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mtklog-config.prop \
-    vendor/inoi/A75/proprietary/system_ext/etc/nr-city.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nr-city.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/permissions/system-ext-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-mediatek.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/sysconfig/com.android.phone.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.android.phone.config.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/system_ext/etc/wmshell.protolog.json.gz:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wmshell.protolog.json.gz \
-    vendor/inoi/A75/proprietary/system_ext/usp/usp-content-OP00.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP00.txt \
-    vendor/inoi/A75/proprietary/system_ext/usp/usp-info.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-info.txt \
     vendor/inoi/A75/proprietary/vendor/app/t6/02662e8e-e126-11e5-b86d9a79f06e9478.ta:$(TARGET_COPY_OUT_VENDOR)/app/t6/02662e8e-e126-11e5-b86d9a79f06e9478.ta \
     vendor/inoi/A75/proprietary/vendor/app/t6/5b9e0e41-2636-11e1-ad9e0002a5d5c51c.ta:$(TARGET_COPY_OUT_VENDOR)/app/t6/5b9e0e41-2636-11e1-ad9e0002a5d5c51c.ta \
     vendor/inoi/A75/proprietary/vendor/app/t6/9ef77781-7bd5-4e39-965f20f6f211f400.ta:$(TARGET_COPY_OUT_VENDOR)/app/t6/9ef77781-7bd5-4e39-965f20f6f211f400.ta \
@@ -64,10 +16,12 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/inoi/A75/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/inoi/A75/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/inoi/A75/proprietary/vendor/etc/apdb/APDB_MT6789___W2448:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2448 \
     vendor/inoi/A75/proprietary/vendor/etc/apdb/APDB_MT6789___W2448_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2448_ENUM \
     vendor/inoi/A75/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
+    vendor/inoi/A75/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -181,11 +135,8 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/inoi/A75/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     vendor/inoi/A75/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/inoi/A75/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
     vendor/inoi/A75/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/inoi/A75/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/inoi/A75/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -197,9 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/inoi/A75/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/inoi/A75/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
-    vendor/inoi/A75/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
-    vendor/inoi/A75/proprietary/vendor/etc/gbe.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gbe.cfg \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -213,56 +161,25 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/init.insmod.mt6789.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6789.cfg \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.clearkey.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.samsung.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustkernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustkernel.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/cmd_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cmd_services.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/getgameserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/getgameserver.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/factory_init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.common.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/factory_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/factory_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.project.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/factory_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.aee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.aee.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.cgroup.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.cgroup.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.common.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.modem.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.mt6789.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6789.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.mt6789.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6789.usb.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init_connectivity.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/meta_init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.connectivity.common.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/meta_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.connectivity.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/meta_init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.modem.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/meta_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.project.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/meta_init.vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.vendor.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/hw/multi_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/multi_init.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -281,111 +198,38 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_stack.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/mtk_pkm_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_pkm_service.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/mtklog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtklog.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/phasecheckserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/phasecheckserver.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/trustkernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustkernel.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root-R3.cer \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/gold.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/gold.cer \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/root-singtel.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/root-singtel.crt \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
-    vendor/inoi/A75/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/inoi/A75/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/inoi/A75/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    vendor/inoi/A75/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     vendor/inoi/A75/proprietary/vendor/etc/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
-    vendor/inoi/A75/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
+    vendor/inoi/A75/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/inoi/A75/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/mtk_vext_info:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_vext_info \
     vendor/inoi/A75/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
-    vendor/inoi/A75/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml \
     vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
     vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.touchscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.vulkan.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.software.opengles.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/inoi/A75/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
     vendor/inoi/A75/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
     vendor/inoi/A75/proprietary/vendor/etc/sec_s3nsn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nsn4v_hwreg.bin \
@@ -395,154 +239,9 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/inoi/A75/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/inoi/A75/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/04f60c28.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/04f60c28.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/0d69c7e1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/0d69c7e1.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/10531352.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/10531352.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/111e6273.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/12d55845.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/12d55845.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1ae85e5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1ae85e5e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1df5a75f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1df5a75f.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1e1eab7c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e1eab7c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1e8e7201.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1e8e7201.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1eb37bdf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1eb37bdf.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/1f58a078.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/1f58a078.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/219d9499.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/219d9499.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/23f4c490.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/23f4c490.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/27af790d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/27af790d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/2add47b6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2add47b6.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/2d9dafe4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2d9dafe4.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/2fa87019.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/2fa87019.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/302904dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/302904dd.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/304d27c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/304d27c3.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/31188b5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/31188b5e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/33ee480d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/33ee480d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/343eb6cb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/343eb6cb.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/35105088.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/35105088.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/399e7759.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3ad48a91.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3c6676aa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c6676aa.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3c860d51.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c860d51.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3c899c73.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c899c73.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3c9a4d3b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3c9a4d3b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/3e7271e8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/3e7271e8.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/40dc992e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/40dc992e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/455f1b52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/455f1b52.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/48a195d8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/48a195d8.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/4be590e0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/4be590e0.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5046c355.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5046c355.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/524d9b43.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/524d9b43.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/52b525c7.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/52b525c7.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/583d0756.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/583d0756.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5a250ea7.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5a250ea7.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5a3f0ff8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5a3f0ff8.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5acf816d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5acf816d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5cf9d536.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5cf9d536.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/5f47b495.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/5f47b495.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/60afe812.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/60afe812.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/6187b673.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6187b673.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/63a2c897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/63a2c897.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/69105f4f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/69105f4f.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/6b03dec0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/6b03dec0.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/75680d2e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/75680d2e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/76579174.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/76579174.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/7892ad52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7892ad52.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/7a7c655d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a7c655d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/7a819ef2.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/7a819ef2.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/81b9768f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/81b9768f.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/82223c44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/82223c44.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/83e9984f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/83e9984f.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/85cde254.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/85cde254.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/86212b19.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/86212b19.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/869fbf79.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/869fbf79.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/882de061.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/882de061.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/88950faa.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/88950faa.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/89c02a45.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/89c02a45.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/8d6437c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/8d6437c3.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9282e51c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9282e51c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9339512a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9339512a.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9479c8c3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9479c8c3.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9576d26b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9576d26b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9591a472.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9591a472.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/95aff9e3.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/95aff9e3.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9685a493.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9685a493.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/985c1f52.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/985c1f52.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9aef356c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9aef356c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9d6523ce.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9d6523ce.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/9f533518.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/9f533518.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/a2c66da8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a2c66da8.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/a3896b44.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a3896b44.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/a7605362.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a7605362.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/a81e292b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a81e292b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/a9d40e02.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/a9d40e02.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/ab5346f4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab5346f4.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/ab59055e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ab59055e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/aeb67534.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/aeb67534.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b0ed035a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0ed035a.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b0f3e76e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b0f3e76e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b3fb433b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b3fb433b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b74d2bd5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b74d2bd5.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b7db1890.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b7db1890.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b872f2b4.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b872f2b4.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/b936d1c6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/b936d1c6.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/bc3f2570.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bc3f2570.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/bd43e1dd.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bd43e1dd.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/bdacca6f.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bdacca6f.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/bf64f35b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/bf64f35b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/c491639e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c491639e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/c51c224c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c51c224c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/c559d742.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c559d742.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/c90bc37d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/c90bc37d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/cb1c3204.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cb1c3204.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/ccc52f49.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ccc52f49.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/cf701eeb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/cf701eeb.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d06393bb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d06393bb.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d16a5865.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d16a5865.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d18e9066.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d18e9066.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d39b0a2c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d39b0a2c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d41b5e2a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d41b5e2a.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d4c339cb.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d4c339cb.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d59297b8.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d59297b8.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/d7746a63.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/d7746a63.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/da7377f6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/da7377f6.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/dbc54cab.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbc54cab.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/dbff3a01.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dbff3a01.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/dc99f41e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dc99f41e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/dfc0fe80.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/dfc0fe80.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/e442e424.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e442e424.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/e48193cf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e48193cf.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/e8651083.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/e8651083.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/ed39abd0.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/ed39abd0.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/edcbddb5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/edcbddb5.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/f013ecaf.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f013ecaf.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/f0cd152c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f0cd152c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/f459871d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/f459871d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/fb5fa911.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fb5fa911.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/fd08c599.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fd08c599.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts/fde84897.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/fde84897.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/111e6273.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/3ad48a91.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/7651b327.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/7651b327.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/c542733d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c542733d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/f336e3d1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/f336e3d1.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/18dc3a8d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/18dc3a8d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/1bc5ca0c.1:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/1bc5ca0c.1 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/2cbfcc3a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/2cbfcc3a.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/35ef1c14.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/35ef1c14.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/399e7759.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/399e7759.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/586933d9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/586933d9.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/6146415b.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/6146415b.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/66272d0d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/66272d0d.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/6f1dbe5e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/6f1dbe5e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/b5805141.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b5805141.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/b805b58a.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/b805b58a.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/ed7b215e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ed7b215e.0 \
-    vendor/inoi/A75/proprietary/vendor/etc/security/cacerts_supl/lab/ef4b31e6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ef4b31e6.0 \
+    vendor/inoi/A75/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/inoi/A75/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
-    vendor/inoi/A75/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/inoi/A75/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
@@ -552,19 +251,12 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
     vendor/inoi/A75/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/throttle.sh:$(TARGET_COPY_OUT_VENDOR)/etc/throttle.sh \
-    vendor/inoi/A75/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/inoi/A75/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     vendor/inoi/A75/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/inoi/A75/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/inoi/A75/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/inoi/A75/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/inoi/A75/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/wfd_source_capability.csv:$(TARGET_COPY_OUT_VENDOR)/etc/wfd_source_capability.csv \
-    vendor/inoi/A75/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/inoi/A75/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
     vendor/inoi/A75/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/inoi/A75/proprietary/vendor/firmware/NT36672S_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/NT36672S_novatek_ts_fw.bin \
     vendor/inoi/A75/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin \
@@ -666,44 +358,17 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/inoi/A75/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/inoi/A75/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
-    vendor/inoi/A75/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/inoi/A75/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
-    vendor/inoi/A75/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
-    vendor/inoi/A75/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
-    vendor/inoi/A75/proprietary/vendor/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav \
-    vendor/inoi/A75/proprietary/vendor/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav \
-    vendor/inoi/A75/proprietary/vendor/ro.prop:$(TARGET_COPY_OUT_VENDOR)/ro.prop \
-    vendor/inoi/A75/proprietary/vendor/rw.prop:$(TARGET_COPY_OUT_VENDOR)/rw.prop \
-    vendor/inoi/A75/proprietary/vendor_dlkm/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias \
-    vendor/inoi/A75/proprietary/vendor_dlkm/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep \
-    vendor/inoi/A75/proprietary/vendor_dlkm/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load \
-    vendor/inoi/A75/proprietary/vendor_dlkm/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.softdep
+    vendor/inoi/A75/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
-    libGLES_meow \
-    libMEOW_data \
-    libMEOW_gift \
-    libMEOW_qt \
-    libMEOW_trace \
     libGLES_mali \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@6.0-impl-mediatek \
-    android.hardware.audio@7.0-impl-mediatek \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger@2.3-impl \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@2.0-impl \
-    audio.bluetooth.default \
-    audio.primary.default \
     audio.primary.mediatek \
-    audio.r_submix.default \
     audio.r_submix.mediatek \
-    audio.usb.default \
-    audio_policy.stub \
     awinic.audio.effect \
     fpsensor_fingerprint.default \
     gatekeeper.trustkernel \
@@ -711,6 +376,7 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     kmsetkey.trustkernel \
     libSoftGatekeeper \
+    local_time.default \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     gralloc.common \
@@ -718,44 +384,172 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.pq@2.15-impl \
     vulkan.mali \
-    power.default \
     sound_trigger.primary.default \
-    thermal_hal \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     vendor.sprd.hardware.fingerprintmmi@1.0-impl \
-    vibrator.default \
-    libCamera_s5kgw3spmipiraw_360_remosaic_capture \
-    libCamera_s5kgw3spmipiraw_360_super_night_capture \
-    libCamera_s5kjn1mipiraw_50M_Capture \
-    libCamera_s5kjn1mipiraw_Slow_Video \
-    libCamera_s5kjn1mipiraw_SuperNight_capture \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
-    libMtkOmxCore \
-    libMtkSpeechEnh \
     libNoFpsActor \
-    libOpenCL \
-    libSQLiteModule_VER_ALL \
-    lib_iir \
-    lib_speech_enh \
-    libaal_key \
     libaal_mtk \
-    libadpcmdec_mtk \
     libaedv \
-    libapmonitor_vendor \
+    libalsautils-v31 \
     libapu_mdw \
     libapu_mdw_batch \
     libapusys \
     libapusys_edma \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
+    libaudiotoolkit_vendor \
+    libavservices_minijail_vendor \
+    libbluetooth_audio_session_mediatek \
+    libbwc \
+    libcarrierconfig \
+    libccci_util \
+    libcmdl \
+    libcmdl_ndk.mtk.vndk \
+    libfgauge_gm30 \
+    libfile_op \
+    libflatbuffers-cpp-mtk \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libgz_gp_client \
+    libgz_uree \
+    libion_mtk \
+    libion_ulit \
+    libipsec_ims_shr \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
+    libladder \
+    libmtkcutils \
+    libmtkproperty \
+    libmtkrillog \
+    libneuroeara \
+    libneuron_graph_delegate.mtk \
+    libneuropilot_hal_utils \
+    libnvram \
+    libnvram_sec \
+    libpqframework \
+    libruy-mtk \
+    libsensorndkbridge \
+    libstorage_otp \
+    libteec \
+    libtextclassifier_hash-mtk \
+    libtflite_mtk \
+    libthha \
+    libvcodec_oal \
+    libverno \
+    libwo \
+    arm.graphics-V1-ndk_platform \
+    libaalservice \
+    libaiselector \
+    libdpframework \
+    libmtk_drvb \
+    libmtkcam.atmseventmgr \
+    libmtkcam.eventcallback \
+    libmtkcam_debugutils \
+    libmtkcam_stdutils \
+    libmtkcam_ulog \
+    libneuron_adapter_mgvi \
+    libpq_prot \
+    libaudiopreprocessing_mtk \
+    libvisualizer \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.audio@7.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.camera.atms@1.0 \
+    vendor.mediatek.hardware.camera.bgservice@1.0 \
+    vendor.mediatek.hardware.camera.bgservice@1.1 \
+    vendor.mediatek.hardware.keymaster_attestation@1.0 \
+    vendor.mediatek.hardware.keymaster_attestation@1.1 \
+    vendor.mediatek.hardware.mmagent@1.0 \
+    vendor.mediatek.hardware.mmagent@1.1 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.neuropilot.agent@1.0 \
+    vendor.mediatek.hardware.neuropilot.agent@1.1 \
+    vendor.mediatek.hardware.neuropilot.agent@1.2 \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.10 \
+    vendor.mediatek.hardware.pq@2.11 \
+    vendor.mediatek.hardware.pq@2.12 \
+    vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.14 \
+    vendor.mediatek.hardware.pq@2.15 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.pq@2.7 \
+    vendor.mediatek.hardware.pq@2.8 \
+    vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.sprd.hardware.fingerprintmmi@1.0 \
+    librcs_interface \
+    librcs_volte_core \
+    libvolte_core_shr \
+    libvolte_xdmc_shr \
+    libvcodec_utility_v3a \
+    libvcodecdrv_v3a \
+    libvpudv3a_vcodec \
+    vendor.mediatek.hardware.rcs@2.0 \
+    APUWareApusysServer \
+    APUWareHmpServer \
+    APUWareUtilsServer \
+    android.hardware.security.keymint-V3-ndk-mtk \
+    android.hardware.gnss-impl-mediatek \
+    android.hardware.gnss@2.1-impl-mediatek \
+    android.hardware.sensors@2.X-subhal-mediatek \
+    hwcomposer.mtk_common \
+    hwcomposer.mtk_fold \
+    android.hardware.camera.provider@2.6-impl-mediatek \
+    vendor.mediatek.hardware.camera.ccap@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.1-impl \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
+    sensors.mediatek.V2.0 \
+    lbs_hidl_service-impl \
+    libCamera_s5kgw3spmipiraw_360_remosaic_capture \
+    libCamera_s5kgw3spmipiraw_360_super_night_capture \
+    libCamera_s5kjn1mipiraw_50M_Capture \
+    libCamera_s5kjn1mipiraw_Slow_Video \
+    libCamera_s5kjn1mipiraw_SuperNight_capture \
+    libMtkSpeechEnh \
+    libOpenCL \
+    libSQLiteModule_VER_ALL \
+    libVkLayer_mtk_rt_sdk \
+    lib_eara_io_scndet \
+    lib_eara_io_service \
+    lib_eara_io_systracer \
+    lib_eara_io_timer \
+    lib_eara_io_util \
+    lib_iir \
+    lib_speech_enh \
+    libaal_key \
+    libadpcmdec_mtk \
+    libapmonitor_vendor \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
@@ -770,35 +564,46 @@ PRODUCT_PACKAGES += \
     libaudioloudc \
     libaudioprimarydevicehalifclient \
     libaudiosmartpamtk \
-    libaudiotoolkit_vendor \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
     libbluetoothem_mtk \
-    libbwc \
+    libbt-vendor \
+    libcam.seninfn3d \
+    libcamalgo.3dnr \
+    libcamalgo.dngop \
+    libcamalgo.eis \
+    libcamalgo.fdft \
+    libcamalgo.fsc \
+    libcamalgo.gyro \
+    libcamalgo.lmv \
+    libcamalgo.n3d \
+    libcamalgo.nr \
+    libcamalgo.platform \
     libcamalgo.utility \
-    libcapctrl \
+    libcamalgo.warp \
     libcares_naptr \
-    libcarrierconfig \
-    libccci_util \
-    libcharon-ss \
-    libcmdl \
-    libcmdl_ndk.mtk.vndk \
+    libcodec2_hidl@1.0-v33 \
+    libcodec2_hidl@1.1-v33 \
+    libcodec2_hidl@1.2-v33 \
+    libcodec2_hidl_plugin-v33 \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_soft_common-v33 \
     libcodec2_soft_mtk_alacdec \
     libcodec2_soft_mtk_apedec \
     libcodec2_soft_mtk_imaadpcmdec \
     libcodec2_soft_mtk_mp3dec \
     libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vndk-v33 \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
+    libcomposer_ext \
     libconnfem \
     libcrypto-md \
     libcs_cs35l45_intf \
@@ -807,123 +612,119 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdecrypt \
     libdynamiclog \
+    libem_sensor_jni \
     libfactorylib \
-    libfgauge_gm30 \
-    libfile_op \
-    libformatter \
+    libfft_vendor \
+    libforkexecwrap \
+    libformatter_mtk \
     libfp_ext_svc2 \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
-    libgz_gp_client \
-    libgz_uree \
+    libheichal \
     libhevce_sb.ca7.android \
+    libhfmanager \
+    libhfmanagerwrapper \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
+    libhwm \
     libhydra \
     libicd_decoder \
+    libifcutils_mtk \
+    libimagebuffer_wrapper \
     libimgsensorca \
-    libion_mtk \
-    libion_ulit \
-    libipsec_ims_shr \
     libispcameraca \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
-    libladder \
+    libkmsetkey \
+    libkphhelper \
+    libkphproxy \
+    libksensor \
+    liblibarm_mali_config_sysprops \
     libminiui \
+    libmipc \
+    libmmagent \
     libmml \
     libmmprofile \
     libmnetlink_v104 \
     libmp3dec_mtk \
     libmsbc_mtk \
+    libmtk-fusion-ril-prop-vsim \
+    libmtk-ril \
     libmtk_bsg \
     libmtkares \
-    libmtkcutils \
+    libmtkcam_pipelinepolicy-aov \
+    libmtkconfig \
+    libmtkconfigutils \
     libmtkhardware_legacy \
+    libmtkisp_metadata \
     libmtklimiter_vendor \
+    libmtkmipc-ril \
+    libmtknetcap \
     libmtknetutils \
-    libmtkperf_client_vendor \
-    libmtkproperty \
-    libmtkrillog \
+    libmtkrilutils \
     libmtkshifter_vendor \
     libmtkspparser \
     libmtksysutils \
-    libmvpu_cic_ci_compiler \
-    libmvpu_clc_cl_compiler \
-    libmvpu_clc_mvpu_debuginfo \
-    libmvpu_clc_mvpu_elf \
-    libmvpu_clc_mvpu_utility \
-    libmvpu_clc_vpu_isa \
-    libmvpu_config \
-    libmvpu_engine \
-    libmvpu_engine_pub \
-    libmvpu_pattern \
-    libmvpu_pattern_pub \
-    libmvpu_runtime \
-    libmvpu_runtime_pub \
-    libmvpuop_mtk_cv \
-    libmvpuop_mtk_nn \
-    libneuroeara \
-    libneuron_graph_delegate.mtk \
-    libneuropilot_hal_utils \
-    libnir_neon_driver_ndk.mtk.vndk \
-    libnpagent \
-    libnvram \
-    libnvram_sec \
+    libmtktinyxml \
+    libmtkutils \
+    libneuron_platform \
     libnxp_extamp_intf \
-    libperfctl_vendor \
     libpixelflinger \
-    libpkm \
+    libpl \
     libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
-    libpqframework \
+    libratconfig \
+    libremosaic_wrapper \
+    libremosaiclib \
     librgbwlightsensor \
-    librpc \
+    librilfusion \
+    librmsclib1 \
     librt_extamp_intf \
-    libsimaka \
-    libsimlock \
-    libsimmelock \
+    libsfplugin_ccodec_utils-v33 \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libssl-md \
-    libstorage_otp \
+    libstagefright_bufferqueue_helper-ap3a \
     libstrongswan \
     libsysenv \
-    libteec \
-    libtflite_mtk \
-    libthha \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
+    libtrm \
     libudf \
-    libvcodec_oal \
-    libvcodecdrv_header_stub \
-    libverno \
-    libviagpsrpc \
-    libvow_ap_test_aa \
-    libvow_ap_test_dd \
-    libvow_ap_test_ha \
-    libvow_ap_test_hh \
-    libvow_ap_test_nn \
+    libvia-ril \
+    libviamipc-ril \
+    libvpu \
     libvpu5 \
     libwapi \
-    libwo \
+    libwifitest \
+    libwpa_client \
+    libwpfa \
     libwvhidl \
-    libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
     libwvdrmengine \
     meta_wifi_data \
-    arm.graphics-V1-ndk_platform \
+    arm.graphics-V3-ndk \
     bf20a1_mipi_raw_IdxMgr \
     bf20a1_mipi_raw_tuning \
     bf2257_mipi_raw_IdxMgr \
     bf2257_mipi_raw_tuning \
     lib3a.ae.core \
     lib3a.ae \
+    lib3a.ae.stat \
+    lib3a.af.assist \
+    lib3a.af.assist.utils \
+    lib3a.af.core \
+    lib3a.af \
+    lib3a.alsflicker \
     lib3a.awb.core \
+    lib3a.ccudrv \
+    lib3a.ccuif \
+    lib3a.custom.ae \
+    lib3a.dce \
+    lib3a.flash \
+    lib3a.flicker \
+    lib3a.gma \
+    lib3a.lce \
     lib3a.log \
+    lib3a.n3d3a \
+    lib3a.sensors.color \
+    lib3a.sensors.flicker \
     libCamera_bf20a1mipiraw_E2EHDR_Preview \
     libCamera_bf20a1mipiraw_E2EHDR_Video \
     libCamera_bf20a1mipiraw_Face_Capture \
@@ -1044,235 +845,6 @@ PRODUCT_PACKAGES += \
     libCamera_s5kjn1mipiraw_Scene_Preview_ZSD_Flash \
     libCamera_s5kjn1mipiraw_Video_1080 \
     libCamera_s5kjn1mipiraw_Video_4k \
-    libaal_cust_func \
-    libaalservice \
-    libaiselector \
-    libcam.hal3a.log \
-    libcam.halsensor.hwintegration \
-    libcamalgo.platform2 \
-    libcameracustom.lens \
-    libcameracustom \
-    libdpframework \
-    libgpudataproducer \
-    libmtk_drvb \
-    libmtkcam.atmseventmgr \
-    libmtkcam.eventcallback \
-    libmtkcam_debugutils \
-    libmtkcam_metadata \
-    libmtkcam_modulehelper \
-    libmtkcam_stdutils \
-    libmtkcam_sysutils \
-    libmtkcam_tuning_utils \
-    libmtkcam_ulog \
-    libneuralnetworks_sl_driver_mtk_prebuilt \
-    libneuron_adapter_mgvi \
-    libnir_neon_driver \
-    libpq_cust_base \
-    libpq_prot \
-    libpqparamparser \
-    ov16a1q_mipi_raw_IdxMgr \
-    ov16a1q_mipi_raw_tuning \
-    s5k3l6_mipi_raw_IdxMgr \
-    s5k3l6_mipi_raw_tuning \
-    s5kgw3sp_mipi_raw_IdxMgr \
-    s5kgw3sp_mipi_raw_tuning \
-    s5kjn1_mipi_raw_IdxMgr \
-    s5kjn1_mipi_raw_tuning \
-    nfc_nci_samsung \
-    libaudiopreprocessing \
-    libaudiopreprocessing_mtk \
-    libhapticgenerator \
-    vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
-    vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
-    vendor.mediatek.hardware.camera.atms@1.0 \
-    vendor.mediatek.hardware.camera.bgservice@1.0 \
-    vendor.mediatek.hardware.camera.bgservice@1.1 \
-    vendor.mediatek.hardware.keymaster_attestation@1.0 \
-    vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    vendor.mediatek.hardware.mdmonitor@1.0 \
-    vendor.mediatek.hardware.mmagent@1.0 \
-    vendor.mediatek.hardware.mmagent@1.1 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mms@1.6 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
-    vendor.mediatek.hardware.netdagent@1.0 \
-    vendor.mediatek.hardware.neuropilot.agent@1.0 \
-    vendor.mediatek.hardware.neuropilot.agent@1.1 \
-    vendor.mediatek.hardware.neuropilot.agent@1.2 \
-    vendor.mediatek.hardware.nvram@1.0 \
-    vendor.mediatek.hardware.nvram@1.1 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.10 \
-    vendor.mediatek.hardware.pq@2.11 \
-    vendor.mediatek.hardware.pq@2.12 \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.14 \
-    vendor.mediatek.hardware.pq@2.15 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.pq@2.7 \
-    vendor.mediatek.hardware.pq@2.8 \
-    vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.sprd.hardware.fingerprintmmi@1.0 \
-    libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264dec_sd.ca7 \
-    libh264dec_se.ca7 \
-    libmp4enc_sa.ca7 \
-    librcs_interface \
-    librcs_volte_core \
-    libstagefright_soft_aacdec \
-    libstagefright_soft_aacenc \
-    libstagefright_soft_amrdec \
-    libstagefright_soft_amrnbenc \
-    libstagefright_soft_amrwbenc \
-    libstagefright_soft_avcdec \
-    libstagefright_soft_avcenc \
-    libstagefright_soft_flacdec \
-    libstagefright_soft_flacenc \
-    libstagefright_soft_g711dec \
-    libstagefright_soft_gsmdec \
-    libstagefright_soft_hevcdec \
-    libstagefright_soft_mp3dec \
-    libstagefright_soft_mpeg2dec \
-    libstagefright_soft_mpeg4dec \
-    libstagefright_soft_mpeg4enc \
-    libstagefright_soft_opusdec \
-    libstagefright_soft_rawdec \
-    libstagefright_soft_vorbisdec \
-    libstagefright_soft_vpxdec \
-    libstagefright_soft_vpxenc \
-    libvcodec_utility_plat.mt6789 \
-    libvolte_core_shr \
-    libvolte_xdmc_shr \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
-    libvpud_vcodec \
-    libvcodec_utility \
-    libvcodec_utility_v3a \
-    libvcodecdrv \
-    libvcodecdrv_v3a \
-    libvpudv3a_vcodec \
-    vendor.mediatek.hardware.rcs@2.0 \
-    APUWareApusysServer \
-    APUWareHmpServer \
-    APUWareUtilsServer \
-    android.hardware.power-service-mediatek \
-    android.hardware.security.keymint-V3-ndk-mtk \
-    android.hardware.boot@1.0-impl-1.2-mtkimpl \
-    android.hardware.gnss-impl-mediatek \
-    android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.sensors@2.X-subhal-mediatek \
-    hwcomposer.mtk_common \
-    hwcomposer.mtk_fold \
-    android.hardware.camera.provider@2.6-impl-mediatek \
-    vendor.mediatek.hardware.camera.ccap@1.0-impl \
-    vendor.mediatek.hardware.camera.isphal@1.0-impl \
-    vendor.mediatek.hardware.camera.isphal@1.1-impl \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    sensors.mediatek.V2.0 \
-    lbs_hidl_service-impl \
-    libVkLayer_mtk_rt_sdk \
-    lib_eara_io_scndet \
-    lib_eara_io_service \
-    lib_eara_io_systracer \
-    lib_eara_io_timer \
-    lib_eara_io_util \
-    libcam.seninfn3d \
-    libcamalgo.3dnr \
-    libcamalgo.dngop \
-    libcamalgo.eis \
-    libcamalgo.fdft \
-    libcamalgo.fsc \
-    libcamalgo.gyro \
-    libcamalgo.lmv \
-    libcamalgo.n3d \
-    libcamalgo.nr \
-    libcamalgo.platform \
-    libcamalgo.warp \
-    libcomposer_ext \
-    libem_sensor_jni \
-    libfft_vendor \
-    libforkexecwrap \
-    libgwsd-ril \
-    libheichal \
-    libhfmanager \
-    libhfmanagerwrapper \
-    libhwm \
-    libifcutils_mtk \
-    libimagebuffer_wrapper \
-    libkmsetkey \
-    libkphhelper \
-    libkphproxy \
-    libksensor \
-    libmipc \
-    libmmagent \
-    libmtk-fusion-ril-prop-vsim \
-    libmtk-ril \
-    libmtkcam_pipelinepolicy-aov \
-    libmtkconfig \
-    libmtkconfigutils \
-    libmtkisp_metadata \
-    libmtkmipc-ril \
-    libmtknetcap \
-    libmtkrilutils \
-    libmtktinyxml \
-    libmtkutils \
-    libneuron_platform \
-    libnpagent_server \
-    libpl \
-    libratconfig \
-    libremosaic_wrapper \
-    libremosaiclib \
-    librilfusion \
-    librmsclib1 \
-    libtrm \
-    libvia-ril \
-    libviamipc-ril \
-    libvpu \
-    libwifitest \
-    libwpfa \
-    lib3a.ae.stat \
-    lib3a.af.assist \
-    lib3a.af.assist.utils \
-    lib3a.af.core \
-    lib3a.af \
-    lib3a.alsflicker \
-    lib3a.ccudrv \
-    lib3a.ccuif \
-    lib3a.custom.ae \
-    lib3a.dce \
-    lib3a.flash \
-    lib3a.flicker \
-    lib3a.gma \
-    lib3a.lce \
-    lib3a.n3d3a \
-    lib3a.sensors.color \
-    lib3a.sensors.flicker \
     libDR \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1284,6 +856,7 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibraryWrapper \
     libaaa_ltm \
     libaaa_ltmx \
+    libaal_cust_func \
     libacdk \
     libaiawb_moon \
     libaiawb_p1ggm \
@@ -1297,6 +870,7 @@ PRODUCT_PACKAGES += \
     libcam.chdr \
     libcam.feature_utils \
     libcam.hal3a.cctsvr \
+    libcam.hal3a.log \
     libcam.hal3a.v3.ae \
     libcam.hal3a.v3.ai3a \
     libcam.hal3a.v3.awb \
@@ -1311,6 +885,7 @@ PRODUCT_PACKAGES += \
     libcam.halisp.buf \
     libcam.halisp.common \
     libcam.halisp \
+    libcam.halsensor.hwintegration \
     libcam.halsensor \
     libcam.iopipe \
     libcam.isptuning \
@@ -1320,6 +895,7 @@ PRODUCT_PACKAGES += \
     libcam.vhdr \
     libcamalgo.ispfeature \
     libcamalgo.lsc \
+    libcamalgo.platform2 \
     libcamalgo.rotate \
     libcamalgo.vsf \
     libcamdrv_isp \
@@ -1336,7 +912,9 @@ PRODUCT_PACKAGES += \
     libcameracustom.camera_exif \
     libcameracustom.eis \
     libcameracustom.flashlight \
+    libcameracustom.lens \
     libcameracustom.plugin \
+    libcameracustom \
     libdip_drv \
     libdip_postproc \
     libeffecthal.base \
@@ -1349,11 +927,12 @@ PRODUCT_PACKAGES += \
     libfeature_lmv \
     libfeature_rss \
     libfeatureiodrv_mem \
+    libgpudataproducer \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     liblpcnr \
-    libmnl \
+    libmnl_mtk \
     libmsnr \
     libmtkcam.featurepipe.capture \
     libmtkcam.featurepipe.depthmap \
@@ -1384,12 +963,14 @@ PRODUCT_PACKAGES += \
     libmtkcam_imem \
     libmtkcam_imgbuf \
     libmtkcam_mapping_mgr \
+    libmtkcam_metadata \
     libmtkcam_metastore \
     libmtkcam_mfb \
     libmtkcam_modulefactory_aaa \
     libmtkcam_modulefactory_custom \
     libmtkcam_modulefactory_drv \
     libmtkcam_modulefactory_utils \
+    libmtkcam_modulehelper \
     libmtkcam_owe \
     libmtkcam_pipeline \
     libmtkcam_pipeline_fbm \
@@ -1409,10 +990,26 @@ PRODUCT_PACKAGES += \
     libmtkcam_scenariorecorder \
     libmtkcam_streamutils \
     libmtkcam_synchelper \
+    libmtkcam_sysutils \
+    libmtkcam_tuning_utils \
+    libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_runtime.5 \
+    libpq_cust_base \
+    libpqparamparser \
     libstereoinfoaccessor_vsdof \
     libvainr_model \
+    ov16a1q_mipi_raw_IdxMgr \
+    ov16a1q_mipi_raw_tuning \
+    s5k3l6_mipi_raw_IdxMgr \
+    s5k3l6_mipi_raw_tuning \
+    s5kgw3sp_mipi_raw_IdxMgr \
+    s5kgw3sp_mipi_raw_tuning \
+    s5kjn1_mipi_raw_IdxMgr \
+    s5kjn1_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
+    nfc_nci_samsung \
+    vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
@@ -1430,353 +1027,21 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dmc@1.1 \
     vendor.mediatek.hardware.dmc@1.2 \
     vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
+    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
-    libJpegOal \
-    libMiraVision_jni \
-    libPQDCjni \
-    libPQjni \
-    libTeeClient \
-    libTeeServiceJni \
-    lib_remote_simlock \
-    libaed \
-    libapuwareapusys.mtk \
-    libapuwareapusys_v2.mtk \
-    libapuwarehmp.mtk \
-    libapuwareutils.mtk \
-    libapuwareutils_v2.mtk \
-    libapuwarexrp.mtk \
-    libapuwarexrp_v2.mtk \
-    libarmnn_ndk.mtk \
-    libaudio_param_parser-sys \
-    libaudio_param_parser-sys@8.1 \
-    libaudio_param_parser-sys@aidl \
-    libaudiocompensationfilter \
-    libaudiocomponentengine \
-    libaudiotoolkit \
-    libaudioutilmtk \
-    libbessound_hd_mtk \
-    libblisrc \
-    libcmdl_ndk.mtk \
-    libcompress \
-    libcustom_jni \
-    libcustom_prop \
-    libdisp_dejitter \
-    libdrmmtkutil \
-    libdrmmtkwhitelist \
-    libem_aoltest_jni \
-    libem_audio_jni \
-    libem_bleoffload_jni \
-    libem_support_jni \
-    libem_wifi_jni \
-    libged_kpi \
-    libged_sys \
-    libgpud_sys \
-    libgralloc_extra_sys \
-    libgui_debug \
-    libhdcp_helper \
-    libjni_pq \
-    libjpeg-alpha-oal \
-    libjpeg-alpha \
-    libmcv_runtime_usdk.mtk \
-    libmdloggerrecycle \
-    libmediatek_exceptionlog \
-    libmemoryDumpEncoder \
-    libmtk_vt_wrapper \
-    libmtkperf_client \
-    libmvpu_cic_ci_compiler.mtk \
-    libmvpu_cic_ci_compiler_25.mtk \
-    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
-    libmvpu_clc_14_mvpu_elf_25.mtk \
-    libmvpu_clc_14_mvpu_utility_25.mtk \
-    libmvpu_clc_mvpu_debuginfo.mtk \
-    libmvpu_clc_mvpu_elf.mtk \
-    libmvpu_clc_mvpu_utility.mtk \
-    libmvpu_config.mtk \
-    libmvpu_engine.mtk \
-    libmvpu_engine_25.mtk \
-    libmvpu_engine_25_pub.mtk \
-    libmvpu_engine_pub.mtk \
-    libmvpu_pattern.mtk \
-    libmvpu_pattern_25.mtk \
-    libmvpu_pattern_25_pub.mtk \
-    libmvpu_pattern_pub.mtk \
-    libmvpu_runtime.mtk \
-    libmvpu_runtime_25.mtk \
-    libmvpu_runtime_25_pub.mtk \
-    libmvpu_runtime_builtin.mtk \
-    libmvpu_runtime_builtin_25.mtk \
-    libmvpu_runtime_pub.mtk \
-    libmvpuop25_mtk_cv.mtk \
-    libmvpuop25_mtk_nn.mtk \
-    libmvpuop_mtk_cv.mtk \
-    libmvpuop_mtk_nn.mtk \
-    libnativecheck-jni \
-    libneuronusdk_adapter.mtk \
-    libnir_neon_driver_ndk.mtk \
-    libperfctl \
-    libpowerhalwrap \
-    libpowerhalwrap_jni \
-    libsf_cpupolicy \
-    libsf_debug \
-    libsf_perf \
-    libsmartpower_jni \
-    libstagefright_wfd_mtk \
-    libsysenv_system \
-    libteeservice_client.trustonic \
-    libterservice \
-    libtflite_mtk.mtk \
-    libthroughputmode \
-    libui_ext \
-    libvcodec_cap \
-    libvcodec_capenc \
-    libvoicerecognition \
-    libvoicerecognition_jni \
-    libvow_ap_train_dddd \
-    libvow_ap_train_hhaa \
-    libvow_ap_train_hhha \
-    libvow_ap_train_hhhh \
-    libvow_ap_train_nnnn \
-    libvow_ap_train_trip_dddd \
-    libvow_ap_train_trip_hhaa \
-    libvow_ap_train_trip_hhha \
-    libvow_ap_train_trip_hhhh \
-    libvow_ap_train_trip_nnnn \
-    libvow_ap_train_trip_znnn \
-    libvow_ap_train_znnn \
-    libvow_comp_train \
-    libvsim-adaptor-client \
-    libvsync_hint \
-    vendor.mediatek.hardware.aee-V1-ndk \
-    vendor.mediatek.hardware.aee@1.0 \
-    vendor.mediatek.hardware.aee@1.1 \
-    vendor.mediatek.hardware.apuware.apusys-V3-ndk \
-    vendor.mediatek.hardware.apuware.apusys@1.0 \
-    vendor.mediatek.hardware.apuware.utils-V1-ndk \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@2.0 \
-    vendor.mediatek.hardware.audio-V1-ndk \
-    vendor.mediatek.hardware.audio@8.1 \
-    vendor.mediatek.hardware.mbrain-V2-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.mtkpower_applist-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.sim-V1-ndk \
-    vendor.mediatek.hardware.pq_aidl-V2-ndk \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.trustonic.tee@1.0 \
-    vendor.trustonic.tee@1.1 \
-    libapu_mdw_ext.mtk \
-    libccci_util_sys \
-    libcomutils \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
-    libpcap_bak \
-    libshowlogo \
-    libsignal \
-    libvt_avsync \
-    vendor.mediatek.framework.mtksf_ext-V3-ndk \
-    vendor.mediatek.hardware.composer_ext-V1-ndk \
-    vendor.mediatek.hardware.log-V1-ndk \
-    vendor.mediatek.hardware.log@1.0 \
-    adsp \
-    archcounter_timesync \
-    atf_logger \
-    audio_ipi \
-    backlight_cooling \
-    board_temp \
-    bt_drv_connac1x \
-    btif_drv \
-    c2k_usb \
-    c2k_usb_f_via_atc \
-    c2k_usb_f_via_ets \
-    c2k_usb_f_via_gps \
-    c2k_usb_f_via_modem \
-    c2k_usb_f_via_pcv \
-    cam_qos \
-    camera_dip_isp6s \
-    camera_eeprom \
-    camera_fdvt_isp51 \
-    camera_isp \
-    camera_mem \
-    camera_rsc_isp60 \
-    ccci_auxadc \
-    ccci_ccif \
-    ccci_dpmaif \
-    ccci_fsm_scp \
-    ccci_md_all \
-    ccci_md_clk \
-    ccci_rtc \
-    ccci_util_lib \
-    ccmni \
-    charger_cooling \
-    clk-dbg-mt6789 \
-    clk-disable-unused \
-    cmdq-sec-drv \
-    cmdq-test \
-    connadp \
-    connfem \
-    cpudvfs \
-    cpufreq_sugov_ext \
-    cpuqos_v3 \
-    devmpu \
-    fhctl \
-    flashlight \
-    flashlights-aw3641e \
-    fmradio_drv_mt6631_6635 \
-    focaltech_tp \
-    fpsgo \
-    ged \
-    gps_drv_stp \
-    gps_pwr \
-    gpueb \
-    gz_ipc_mod \
-    gz_irq_mod \
-    gz_log_mod \
-    gz_main_mod \
-    gz_trusty_mod \
-    gz_tz_system \
-    gz_virtio_mod \
-    hf_manager \
-    imgsensor_isp6s \
-    iommu_gz \
-    load_track \
-    main2af \
-    main3af \
-    mainaf \
-    mali_kbase_mt6789 \
-    mali_mgm_mt6789 \
-    mali_prot_alloc_mt6789 \
-    mcupm \
-    md_cooling_all \
-    mddp \
-    mdp_drv_mt6789 \
-    met \
-    met_backlight_api \
-    met_emi_api \
-    met_gpu_adv_api \
-    met_gpu_api \
-    met_ipi_api \
-    met_mcupm_api \
-    met_scmi_api \
-    met_sspm_api \
-    met_vcore_api \
-    mt6358-accdet \
-    mt63xx-oc-debug \
-    mt6789-mt6366 \
-    mtk-afe-external \
-    mtk-btcvsd \
-    mtk-composite \
-    mtk-cqdma \
-    mtk-dvfsrc-start \
-    mtk-lpm-dbg-common-v1 \
-    mtk-lpm-dbg-mt6789 \
-    mtk-lpm-plat-v1 \
-    mtk-lpm \
-    mtk-mbox \
-    mtk-pm-domain-disable-unused \
-    mtk-pwm \
-    mtk-scp-audio \
-    mtk-scp-audiocommon \
-    mtk-scp-ultra \
-    mtk-scp-vow \
-    mtk-sp-spk-amp \
-    mtk-ssc-dbg-v2 \
-    mtk-ssc \
-    mtk-swpm-dbg-common-v1 \
-    mtk-swpm-dbg-v6789 \
-    mtk-swpm \
-    mtk-vcodec-common \
-    mtk-vcodec-dec-v1 \
-    mtk-vcodec-enc-v1 \
-    mtk-vcu \
-    mtk-vow \
-    mtk_battery_oc_throttling \
-    mtk_bp_thl \
-    mtk_cm_ipi \
-    mtk_cm_mgr \
-    mtk_cm_mgr_mt6789 \
-    mtk_core_ctl \
-    mtk_cpu_power_throttling \
-    mtk_disp_sec \
-    mtk_dynamic_loading_throttling \
-    mtk_fpsgo \
-    mtk_gpu_hal \
-    mtk_gpu_power_throttling \
-    mtk_gpu_qos \
-    mtk_gpufreq_mt6789 \
-    mtk_gpufreq_wrapper \
-    mtk_heap_debug \
-    mtk_irtx_pwm \
-    mtk_jpeg \
-    mtk_low_battery_throttling \
-    mtk_md_power_throttling \
-    mtk_mdpm \
-    mtk_pbm \
-    mtk_perf_common \
-    mtk_perf_ioctl \
-    mtk_qos \
-    mtk_rpmsg_mbox \
-    mtk_sec_heap \
-    mtk_tinysys_ipi \
-    mtk_u_ether \
-    mtk_usb_f_rndis \
-    nt36672s \
-    nvmem-mt635x-efuse \
-    pmic_temp \
-    pmsr \
-    reboot-mode \
-    rps_perf \
-    scheduler \
-    scp \
-    sec \
-    sec_nfc \
-    sensorhub \
-    snd-soc-audiodsp-common \
-    snd-soc-aw87xxx \
-    snd-soc-mt6366 \
-    snd-soc-mt6789-afe \
-    snd-soc-mtk-common \
-    snd-soc-mtk-scp-ultra \
-    snd-soc-tfa98xx \
-    soc_temp_lvts \
-    spmtwam \
-    sspm_v3 \
-    sub2af \
-    subaf \
-    syscon-reboot-mode \
-    task_turbo \
-    thermal-generic-adc \
-    thermal_interface \
-    thermal_trace \
-    trace_mmstat \
-    trusted_mem \
-    uload_ind \
-    vcp \
-    vdec-fmt \
-    widevine_driver \
-    wlan_drv_gen4m_6789 \
-    wmt_chrdev_wifi \
-    wmt_drv \
-    zram \
-    zsmalloc \
-    com.android.compos \
-    com.android.vndk.v31 \
-    com.android.vndk.v33 \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
+    android.hardware.nfc@1.2-service.samsung.xml \
     android.hardware.security.keymint-service.trustkernel.xml \
     android.hardware.security.secureclock-service.trustkernel.xml \
     android.hardware.security.sharedsecret-service.trustkernel.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
-    android.hardware.wifi@1.0-service.xml \
+    gnss-mtk.xml \
     gnss@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
-    lights-mtk-default.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_apuware_apusys.xml \
     manifest_apuware_hmp.xml \
@@ -1784,100 +1049,41 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
-    memtrack-mediatek.xml \
     vendor.sprd.hardware.fingerprintmmi@1.0-service.xml \
-    vibrator-mtk-default.xml \
-    AgentTest \
-    atcid \
-    audiocmdservice_atci \
-    autobt \
-    bip \
-    bip_ap \
-    bt_dump \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
-    charon \
-    chipinfo \
-    cmd_services \
     conninfra_loader \
-    dmc_core \
-    eara_io_service \
-    epdg_wod \
-    factory \
     fuelgauged \
     fuelgauged_nvram \
-    gbe \
-    getgameserver \
     gsm0710muxd \
-    android.hardware.audio.service.mediatek \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.boot@1.2-service \
-    android.hardware.cas@1.2-service-lazy \
-    android.hardware.drm@1.4-service.clearkey \
+    hostapd_cli \
     android.hardware.drm@1.4-service.widevine \
-    android.hardware.gatekeeper@1.0-service \
     android.hardware.gnss-service.mediatek \
-    android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.health@2.1-service \
-    android.hardware.lights-service.mediatek \
-    android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.media.omx@1.0-service \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc@1.2-service.samsung \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustkernel \
-    android.hardware.sensors@2.0-service.multihal-mediatek \
-    android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.vibrator-service.mediatek \
-    android.hardware.wifi@1.0-service-lazy \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
-    vendor.mediatek.hardware.mmagent@1.1-service \
-    vendor.mediatek.hardware.mms@1.6-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.sprd.hardware.fingerprintmmi@1.0-service \
-    init.insmod \
-    ipsec_mon \
-    kph \
+    vtservice_hidl \
     lbs_hidl_service \
-    memtester \
     mnld \
-    mt6660_calibration \
-    dumpfaultd.mt6789 \
-    jpegtool \
     v3avpud.mt6789 \
     mtk_agpsd \
-    mtk_pkm_service \
-    mtk_plpath_utils_ota \
-    muxreport \
     netdagent \
-    netdc \
     nvram_daemon \
-    phasecheckserver \
-    pld \
     rcs_volte_stack \
-    readbarcode \
-    rt5512_calibration \
-    sec_nfc_test \
-    smartpa_nvtest \
-    starter \
-    stp_dump3 \
-    stroke \
     tee_check_keybox \
     teed \
-    testgameserver \
     thermal_core \
     thermal_intf \
     volte_clientapi_ua \
@@ -1887,39 +1093,379 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
-    vpud \
     wfca \
-    wifi_dump \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    xcap \
-    AudioSetParam \
-    aee \
-    aee_aed \
-    aee_aed64 \
-    aee_aed64_v2 \
-    aee_core_forwarder \
-    aee_core_forwarder_v2 \
-    aee_dumpstate \
-    aee_dumpstate_v2 \
-    aee_v2 \
-    aeedb \
-    aeedb_v2 \
-    batterywarning \
-    boot_logo_updater \
-    connsyslogger \
-    emdlogger \
-    kpoc_charger \
-    lbs_dbg_ext \
-    loghidlsysservice \
-    mdlogger \
-    mediahelper \
-    mobile_log_d \
-    mtk_plpath_utils \
-    netdiag \
-    rtt \
-    rtt_v2 \
-    terservice \
-    thermald \
-    trace
+    wpa_cli
+
+PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
+    vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
+    vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek_mt6789 \
+    vendor_bin_hw_camerahalserver \
+    vendor_bin_v3avpud \
+    vendor_bin_v3avpud_mt6789 \
+    vendor_lib_egl_libGLES_mali_so \
+    vendor_lib_hw_audio_primary_mt6789_so \
+    vendor_lib_hw_audio_r_submix_mt6789_so \
+    vendor_lib_hw_fingerprint_mt6789_so \
+    vendor_lib_hw_gatekeeper_default_so \
+    vendor_lib_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
+    vendor_lib_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
+    vendor_lib_hw_gralloc_common_so \
+    vendor_lib_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
+    vendor_lib_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
+    vendor_lib_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
+    vendor_lib_hw_vulkan_mali_so \
+    vendor_lib_arm_graphics-V1-ndk_platform_so \
+    vendor_lib_libaalservice_so \
+    vendor_lib_libaiselector_so \
+    vendor_lib_libdpframework_so \
+    vendor_lib_libmtk_drvb_so \
+    vendor_lib_libmtkcam_atmseventmgr_so \
+    vendor_lib_libmtkcam_eventcallback_so \
+    vendor_lib_libmtkcam_debugutils_so \
+    vendor_lib_libmtkcam_stdutils_so \
+    vendor_lib_libmtkcam_ulog_so \
+    vendor_lib_libneuron_adapter_mgvi_so \
+    vendor_lib_libpq_prot_so \
+    vendor_lib_libvcodec_utility_v3a_so \
+    vendor_lib_libvcodecdrv_v3a_so \
+    vendor_lib_libvpudv3a_vcodec_so \
+    vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_audio_primary_mt6789_so \
+    vendor_lib64_hw_audio_r_submix_mt6789_so \
+    vendor_lib64_hw_fingerprint_mt6789_so \
+    vendor_lib64_hw_gatekeeper_default_so \
+    vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
+    vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
+    vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
+    vendor_lib64_hw_gralloc_common_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_ccap@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
+    vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_hw_sensors_mt6789_so \
+    vendor_lib64_arm_graphics-V1-ndk_platform_so \
+    vendor_lib64_bf20a1_mipi_raw_IdxMgr_so \
+    vendor_lib64_bf20a1_mipi_raw_tuning_so \
+    vendor_lib64_bf2257_mipi_raw_IdxMgr_so \
+    vendor_lib64_bf2257_mipi_raw_tuning_so \
+    vendor_lib64_lib3a_ae_core_so \
+    vendor_lib64_lib3a_ae_so \
+    vendor_lib64_lib3a_ae_stat_so \
+    vendor_lib64_lib3a_af_assist_so \
+    vendor_lib64_lib3a_af_assist_utils_so \
+    vendor_lib64_lib3a_af_core_so \
+    vendor_lib64_lib3a_af_so \
+    vendor_lib64_lib3a_alsflicker_so \
+    vendor_lib64_lib3a_awb_core_so \
+    vendor_lib64_lib3a_ccudrv_so \
+    vendor_lib64_lib3a_ccuif_so \
+    vendor_lib64_lib3a_custom_ae_so \
+    vendor_lib64_lib3a_dce_so \
+    vendor_lib64_lib3a_flash_so \
+    vendor_lib64_lib3a_flicker_so \
+    vendor_lib64_lib3a_gma_so \
+    vendor_lib64_lib3a_lce_so \
+    vendor_lib64_lib3a_log_so \
+    vendor_lib64_lib3a_n3d3a_so \
+    vendor_lib64_lib3a_sensors_color_so \
+    vendor_lib64_lib3a_sensors_flicker_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Video_1080_so \
+    vendor_lib64_libCamera_bf20a1mipiraw_Video_4k_so \
+    vendor_lib64_libCamera_bf2257mipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_bf2257mipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_bf2257mipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_bf2257mipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_bf2257mipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_bf2257mipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_bf2257mipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_bf2257mipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_bf2257mipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_bf2257mipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_bf2257mipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Video_1080_so \
+    vendor_lib64_libCamera_bf2257mipiraw_Video_4k_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Video_1080_so \
+    vendor_lib64_libCamera_ov16a1qmipiraw_Video_4k_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Video_1080_so \
+    vendor_lib64_libCamera_s5k3l6mipiraw_Video_4k_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Video_1080_so \
+    vendor_lib64_libCamera_s5kgw3spmipiraw_Video_4k_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_E2EHDR_Preview_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_E2EHDR_Video_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Face_Capture_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Flash_Capture_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_HDR_Capture_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_HDR_Preview_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_HDR_Reconfig_Preview_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_HDR_Reconfig_Video_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_HDR_Video_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_N3D_Capture_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_N3D_Preview_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_N3D_Video_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_P1_YUV_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Scene_Capture_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Scene_Capture_4cell_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Scene_Preview_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Scene_Preview_4k_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Scene_Preview_ZSD_Flash_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Video_1080_so \
+    vendor_lib64_libCamera_s5kjn1mipiraw_Video_4k_so \
+    vendor_lib64_libDR_so \
+    vendor_lib64_libSonyIMX230PdafLibrary_so \
+    vendor_lib64_libSonyIMX230PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX338PdafLibrary_so \
+    vendor_lib64_libSonyIMX338PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX386PdafLibrary_so \
+    vendor_lib64_libSonyIMX386PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX519PdafLibrary_so \
+    vendor_lib64_libSonyIMX519PdafLibraryWrapper_so \
+    vendor_lib64_libaaa_ltm_so \
+    vendor_lib64_libaaa_ltmx_so \
+    vendor_lib64_libaal_cust_func_so \
+    vendor_lib64_libaalservice_so \
+    vendor_lib64_libacdk_so \
+    vendor_lib64_libaiawb_moon_so \
+    vendor_lib64_libaiawb_p1ggm_so \
+    vendor_lib64_libaiawb_sun_so \
+    vendor_lib64_libaibc_tuning_so \
+    vendor_lib64_libaibc_tuning_p2_so \
+    vendor_lib64_libaibc_tuning_p3_so \
+    vendor_lib64_libaibc_tuning_p4_so \
+    vendor_lib64_libaidepth_tuning_so \
+    vendor_lib64_libaiselector_so \
+    vendor_lib64_libcam_afhal_so \
+    vendor_lib64_libcam_chdr_so \
+    vendor_lib64_libcam_feature_utils_so \
+    vendor_lib64_libcam_hal3a_cctsvr_so \
+    vendor_lib64_libcam_hal3a_log_so \
+    vendor_lib64_libcam_hal3a_v3_ae_so \
+    vendor_lib64_libcam_hal3a_v3_ai3a_so \
+    vendor_lib64_libcam_hal3a_v3_awb_so \
+    vendor_lib64_libcam_hal3a_v3_dng_so \
+    vendor_lib64_libcam_hal3a_v3_fsmgr_so \
+    vendor_lib64_libcam_hal3a_v3_lscMgr_so \
+    vendor_lib64_libcam_hal3a_v3_lsctbl_50_so \
+    vendor_lib64_libcam_hal3a_v3_nvram_50_so \
+    vendor_lib64_libcam_hal3a_v3_platform_so \
+    vendor_lib64_libcam_hal3a_v3_resultpool_so \
+    vendor_lib64_libcam_hal3a_v3_so \
+    vendor_lib64_libcam_halisp_buf_so \
+    vendor_lib64_libcam_halisp_common_so \
+    vendor_lib64_libcam_halisp_so \
+    vendor_lib64_libcam_halsensor_hwintegration_so \
+    vendor_lib64_libcam_halsensor_so \
+    vendor_lib64_libcam_iopipe_so \
+    vendor_lib64_libcam_isptuning_so \
+    vendor_lib64_libcam_pdtblgen_so \
+    vendor_lib64_libcam_tuning_cache_so \
+    vendor_lib64_libcam_utils_sensorprovider_so \
+    vendor_lib64_libcam_vhdr_so \
+    vendor_lib64_libcamalgo_ispfeature_so \
+    vendor_lib64_libcamalgo_lsc_so \
+    vendor_lib64_libcamalgo_platform2_so \
+    vendor_lib64_libcamalgo_rotate_so \
+    vendor_lib64_libcamalgo_vsf_so \
+    vendor_lib64_libcamdrv_isp_so \
+    vendor_lib64_libcamdrv_tuning_mgr_so \
+    vendor_lib64_libcamdrv_twin_so \
+    vendor_lib64_libcamera_custom_pd_buf_mgr_so \
+    vendor_lib64_libcamera_customae_so \
+    vendor_lib64_libcamera_customaf_so \
+    vendor_lib64_libcamera_customawb_so \
+    vendor_lib64_libcamera_customflk_so \
+    vendor_lib64_libcameracustom_camera_3a_so \
+    vendor_lib64_libcameracustom_camera_isp_so \
+    vendor_lib64_libcameracustom_camera_sensors_so \
+    vendor_lib64_libcameracustom_camera_exif_so \
+    vendor_lib64_libcameracustom_eis_so \
+    vendor_lib64_libcameracustom_flashlight_so \
+    vendor_lib64_libcameracustom_lens_so \
+    vendor_lib64_libcameracustom_plugin_so \
+    vendor_lib64_libcameracustom_so \
+    vendor_lib64_libdip_drv_so \
+    vendor_lib64_libdip_postproc_so \
+    vendor_lib64_libdpframework_so \
+    vendor_lib64_libeffecthal_base_so \
+    vendor_lib64_libfeature_face_so \
+    vendor_lib64_libfeature_stereo_provider_so \
+    vendor_lib64_libfeature_vsdof_hal_so \
+    vendor_lib64_libfeature_3dnr_so \
+    vendor_lib64_libfeature_eis_so \
+    vendor_lib64_libfeature_fsc_so \
+    vendor_lib64_libfeature_lmv_so \
+    vendor_lib64_libfeature_rss_so \
+    vendor_lib64_libfeatureiodrv_mem_so \
+    vendor_lib64_libgpudataproducer_so \
+    vendor_lib64_libimageio_so \
+    vendor_lib64_libimageio_plat_drv_so \
+    vendor_lib64_libimageio_plat_pipe_so \
+    vendor_lib64_liblpcnr_so \
+    vendor_lib64_libmnl_mtk_so \
+    vendor_lib64_libmsnr_so \
+    vendor_lib64_libmtk_drvb_so \
+    vendor_lib64_libmtkcam_atmseventmgr_so \
+    vendor_lib64_libmtkcam_eventcallback_so \
+    vendor_lib64_libmtkcam_featurepipe_capture_so \
+    vendor_lib64_libmtkcam_featurepipe_depthmap_so \
+    vendor_lib64_libmtkcam_featurepipe_streaming_so \
+    vendor_lib64_libmtkcam_featurepipe_vsdof_util_so \
+    vendor_lib64_libmtkcam_logicalmodule_so \
+    vendor_lib64_libmtkcam_3rdparty_core_so \
+    vendor_lib64_libmtkcam_3rdparty_customer_so \
+    vendor_lib64_libmtkcam_3rdparty_mtk_so \
+    vendor_lib64_libmtkcam_3rdparty_so \
+    vendor_lib64_libmtkcam_calibration_convertor_so \
+    vendor_lib64_libmtkcam_calibration_provider_so \
+    vendor_lib64_libmtkcam_debugutils_so \
+    vendor_lib64_libmtkcam_device3_app_so \
+    vendor_lib64_libmtkcam_device3_hal_so \
+    vendor_lib64_libmtkcam_device3_hidl_so \
+    vendor_lib64_libmtkcam_device3_hidlutils_so \
+    vendor_lib64_libmtkcam_device3_utils_so \
+    vendor_lib64_libmtkcam_devicesessionpolicy_so \
+    vendor_lib64_libmtkcam_diputils_so \
+    vendor_lib64_libmtkcam_exif_so \
+    vendor_lib64_libmtkcam_fdvt_so \
+    vendor_lib64_libmtkcam_featurepolicy_so \
+    vendor_lib64_libmtkcam_featureutils_so \
+    vendor_lib64_libmtkcam_fwkutils_so \
+    vendor_lib64_libmtkcam_grallocutils_so \
+    vendor_lib64_libmtkcam_hwnode_so \
+    vendor_lib64_libmtkcam_hwutils_so \
+    vendor_lib64_libmtkcam_imem_so \
+    vendor_lib64_libmtkcam_imgbuf_so \
+    vendor_lib64_libmtkcam_mapping_mgr_so \
+    vendor_lib64_libmtkcam_metadata_so \
+    vendor_lib64_libmtkcam_metastore_so \
+    vendor_lib64_libmtkcam_mfb_so \
+    vendor_lib64_libmtkcam_modulefactory_aaa_so \
+    vendor_lib64_libmtkcam_modulefactory_custom_so \
+    vendor_lib64_libmtkcam_modulefactory_drv_so \
+    vendor_lib64_libmtkcam_modulefactory_utils_so \
+    vendor_lib64_libmtkcam_modulehelper_so \
+    vendor_lib64_libmtkcam_owe_so \
+    vendor_lib64_libmtkcam_pipeline_so \
+    vendor_lib64_libmtkcam_pipeline_fbm_so \
+    vendor_lib64_libmtkcam_pipelinemodel_so \
+    vendor_lib64_libmtkcam_pipelinemodel_adapter_so \
+    vendor_lib64_libmtkcam_pipelinemodel_capture_so \
+    vendor_lib64_libmtkcam_pipelinemodel_isp_so \
+    vendor_lib64_libmtkcam_pipelinemodel_session_so \
+    vendor_lib64_libmtkcam_pipelinemodel_utils_so \
+    vendor_lib64_libmtkcam_pipelinemodel_zsl_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-security_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-smvr_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_factory_so \
+    vendor_lib64_libmtkcam_prerelease_so \
+    vendor_lib64_libmtkcam_rsc_so \
+    vendor_lib64_libmtkcam_scenariorecorder_so \
+    vendor_lib64_libmtkcam_stdutils_so \
+    vendor_lib64_libmtkcam_streamutils_so \
+    vendor_lib64_libmtkcam_synchelper_so \
+    vendor_lib64_libmtkcam_sysutils_so \
+    vendor_lib64_libmtkcam_tuning_utils_so \
+    vendor_lib64_libmtkcam_ulog_so \
+    vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
+    vendor_lib64_libneuron_adapter_mgvi_so \
+    vendor_lib64_libneuron_runtime_5_so \
+    vendor_lib64_libpq_cust_base_so \
+    vendor_lib64_libpq_prot_so \
+    vendor_lib64_libpqparamparser_so \
+    vendor_lib64_libstereoinfoaccessor_vsdof_so \
+    vendor_lib64_libvainr_model_so \
+    vendor_lib64_ov16a1q_mipi_raw_IdxMgr_so \
+    vendor_lib64_ov16a1q_mipi_raw_tuning_so \
+    vendor_lib64_s5k3l6_mipi_raw_IdxMgr_so \
+    vendor_lib64_s5k3l6_mipi_raw_tuning_so \
+    vendor_lib64_s5kgw3sp_mipi_raw_IdxMgr_so \
+    vendor_lib64_s5kgw3sp_mipi_raw_tuning_so \
+    vendor_lib64_s5kjn1_mipi_raw_IdxMgr_so \
+    vendor_lib64_s5kjn1_mipi_raw_tuning_so \
+    vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
