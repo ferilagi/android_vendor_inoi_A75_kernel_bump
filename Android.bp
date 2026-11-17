@@ -6967,6 +6967,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaisel_legacy",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaisel_legacy.so",
+            ],
+            shared_libs: [
+                "libpq_prot",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libapmonitor_vendor",
     owner: "inoi",
     strip: {
@@ -8885,7 +8911,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libdpfw_legacy.so",
             ],
             shared_libs: [
-                "libaiselector",
+                "libaisel_legacy",
                 "libdmabufheap",
                 "vendor.mediatek.hardware.mmagent@1.0",
                 "libhidlbase",

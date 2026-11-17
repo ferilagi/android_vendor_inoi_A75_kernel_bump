@@ -519,6 +519,7 @@ PRODUCT_PACKAGES += \
     lib_speech_enh \
     libaal_key \
     libadpcmdec_mtk \
+    libaisel_legacy \
     libapmonitor_vendor \
     libarm_egl_properties_sysprop \
     libarm_gralloc_properties_sysprop \
