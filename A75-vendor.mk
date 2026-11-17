@@ -1442,3 +1442,99 @@ PRODUCT_PACKAGES += \
     vendor_lib64_s5kjn1_mipi_raw_IdxMgr_so \
     vendor_lib64_s5kjn1_mipi_raw_tuning_so \
     vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
+
+PRODUCT_COPY_FILES += \
+    vendor/inoi/A75/proprietary/vendor/etc/cust_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_pq.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.4-service.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
+    vendor/inoi/A75/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/inoi/A75/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml
+
+PRODUCT_PACKAGES += \
+    libGLES_meow \
+    libMEOW_data \
+    libMEOW_gift \
+    libMEOW_qt \
+    libMEOW_trace \
+    libGLES_mali \
+    hwcomposer.mtk_common \
+    libsimplehwc \
+    android.hardware.graphics.allocator-V2-mediatek \
+    mapper.mediatek \
+    vulkan.mali \
+    libDefaultFpsActor \
+    libFrameRecord \
+    libNoFpsActor \
+    libblulight_defender \
+    libcomposer_ext \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libgrextra_cam \
+    libnpagent \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlflagparser \
+    libpqxmlparser \
+    libsdrparser \
+    libsilkybrightnesscore \
+    libtinyxml2-mtk \
+    arm.graphics-V5-ndk \
+    libaiselector \
+    libdpframework \
+    libmmagent \
+    libmml \
+    libmtk_mali_user \
+    libmtkcam_grallocutils \
+    libpq_cust_base \
+    libpq_sec \
+    libpqparamparser \
+    libscltm \
+    vendor.mediatek.hardware.composer_ext-V1-ndk \
+    vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.graphics-V1-ndk \
+    vendor.mediatek.hardware.mmagent-V1-ndk \
+    vendor.mediatek.hardware.mmlpq-V3-ndk \
+    vendor.mediatek.hardware.mms-V1-ndk \
+    vendor.mediatek.hardware.neuropilot.agent-V1-ndk \
+    vendor.mediatek.hardware.neuropilot.agent@1.0 \
+    vendor.mediatek.hardware.neuropilot.agent@1.1 \
+    vendor.mediatek.hardware.neuropilot.agent@1.2 \
+    vendor.mediatek.hardware.pq_aidl-V7-ndk \
+    manifest_allocator.xml \
+    manifest_hwcomposer.xml \
+    mapper.mediatek.xml \
+    android.hardware.graphics.composer@3.4-service \
+    android.hardware.graphics.allocator-V2-service-mediatek.mt6789 \
+    vendor.mediatek.hardware.mmagent-service \
+    vendor.mediatek.hardware.mms-service
+
+PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
+    vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek_mt6789 \
+    vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
+    vendor_lib64_hw_mapper_mediatek_so \
+    vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_arm_graphics-V5-ndk_so \
+    vendor_lib64_libaiselector_so \
+    vendor_lib64_libdpframework_so \
+    vendor_lib64_libmmagent_so \
+    vendor_lib64_libmml_so \
+    vendor_lib64_libmtk_mali_user_so \
+    vendor_lib64_libmtkcam_grallocutils_so \
+    vendor_lib64_libpq_cust_base_so \
+    vendor_lib64_libpq_sec_so \
+    vendor_lib64_libpqparamparser_so \
+    vendor_lib64_libscltm_so
