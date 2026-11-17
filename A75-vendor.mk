@@ -370,15 +370,12 @@ PRODUCT_PACKAGES += \
     kmsetkey.trustkernel \
     libSoftGatekeeper \
     local_time.default \
-    gralloc.common \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
-    vendor.mediatek.hardware.pq@2.15-impl \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     vendor.sprd.hardware.fingerprintmmi@1.0-impl \
@@ -419,7 +416,6 @@ PRODUCT_PACKAGES += \
     libneuropilot_hal_utils \
     libnvram \
     libnvram_sec \
-    libpqframework \
     libruy-mtk \
     libsensorndkbridge \
     libstorage_otp \
@@ -431,7 +427,6 @@ PRODUCT_PACKAGES += \
     libverno \
     libwo \
     arm.graphics-V1-ndk_platform \
-    libaalservice \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.eventcallback \
@@ -481,8 +476,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.sprd.hardware.fingerprintmmi@1.0 \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     librcs_interface \
     librcs_volte_core \
     libvolte_core_shr \
@@ -500,11 +493,14 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.X-subhal-mediatek \
     hwcomposer.mtk_fold \
     android.hardware.camera.provider@2.6-impl-mediatek \
+    gralloc.common \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
+    vendor.mediatek.hardware.pq@2.15-impl \
     sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.mms@1.6-impl \
     lbs_hidl_service-impl \
     libCamera_s5kgw3spmipiraw_360_remosaic_capture \
     libCamera_s5kgw3spmipiraw_360_super_night_capture \
@@ -642,6 +638,7 @@ PRODUCT_PACKAGES += \
     libpixelflinger \
     libpl \
     libpower_timer \
+    libpqframework \
     libratconfig \
     libremosaic_wrapper \
     libremosaiclib \
@@ -831,6 +828,7 @@ PRODUCT_PACKAGES += \
     libaaa_ltm \
     libaaa_ltmx \
     libaal_cust_func \
+    libaalservice \
     libacdk \
     libaiawb_moon \
     libaiawb_p1ggm \
@@ -1075,14 +1073,9 @@ PRODUCT_PACKAGES += \
     vendor_lib_hw_audio_r_submix_mt6789_so \
     vendor_lib_hw_fingerprint_mt6789_so \
     vendor_lib_hw_gatekeeper_default_so \
-    vendor_lib_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
-    vendor_lib_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
-    vendor_lib_hw_gralloc_common_so \
     vendor_lib_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
     vendor_lib_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
-    vendor_lib_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
     vendor_lib_arm_graphics-V1-ndk_platform_so \
-    vendor_lib_libaalservice_so \
     vendor_lib_libmtk_drvb_so \
     vendor_lib_libmtkcam_atmseventmgr_so \
     vendor_lib_libmtkcam_eventcallback_so \
