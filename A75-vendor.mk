@@ -491,7 +491,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
-    hwcomposer.mtk_fold \
     android.hardware.camera.provider@2.6-impl-mediatek \
     gralloc.common \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
@@ -583,6 +582,7 @@ PRODUCT_PACKAGES += \
     libcustom_nvram \
     libcvsd_mtk \
     libdecrypt \
+    libdpfw_legacy \
     libdynamiclog \
     libem_sensor_jni \
     libfactorylib \
