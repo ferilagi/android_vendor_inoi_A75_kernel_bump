@@ -481,31 +481,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.sprd.hardware.fingerprintmmi@1.0 \
-    libGLES_mali \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
-    vulkan.mali \
-    libDefaultFpsActor \
-    libFrameRecord \
-    libNoFpsActor \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
     librcs_interface \
     librcs_volte_core \
     libvolte_core_shr \
     libvolte_xdmc_shr \
-    libaiselector \
-    libdpframework \
     libvcodec_utility_v3a \
     libvcodecdrv_v3a \
     libvpudv3a_vcodec \
-    vendor.mediatek.hardware.neuropilot.agent@1.0 \
-    vendor.mediatek.hardware.neuropilot.agent@1.1 \
-    vendor.mediatek.hardware.neuropilot.agent@1.2 \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
@@ -1087,7 +1071,6 @@ PRODUCT_PACKAGES += \
     vendor_bin_hw_camerahalserver \
     vendor_bin_v3avpud \
     vendor_bin_v3avpud_mt6789 \
-    vendor_lib_egl_libGLES_mali_so \
     vendor_lib_hw_audio_primary_mt6789_so \
     vendor_lib_hw_audio_r_submix_mt6789_so \
     vendor_lib_hw_fingerprint_mt6789_so \
@@ -1098,11 +1081,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
     vendor_lib_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
     vendor_lib_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
-    vendor_lib_hw_vulkan_mali_so \
     vendor_lib_arm_graphics-V1-ndk_platform_so \
     vendor_lib_libaalservice_so \
-    vendor_lib_libaiselector_so \
-    vendor_lib_libdpframework_so \
     vendor_lib_libmtk_drvb_so \
     vendor_lib_libmtkcam_atmseventmgr_so \
     vendor_lib_libmtkcam_eventcallback_so \
