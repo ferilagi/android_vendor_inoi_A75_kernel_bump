@@ -11,81 +11,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGLES_mali",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/egl/mt6789/libGLES_mali.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "libutils",
-                "liblog",
-                "libdmabufheap",
-                "libion",
-                "libged",
-                "libgpu_aux",
-                "libgpud",
-                "libgralloc_extra",
-                "libladder",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libcutils",
-                "libbase",
-                "libz",
-                "arm.graphics-V1-ndk_platform",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/mt6789/libGLES_mali.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "libutils",
-                "liblog",
-                "libdmabufheap",
-                "libion",
-                "libged",
-                "libgpu_aux",
-                "libgpud",
-                "libgralloc_extra",
-                "libladder",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libcutils",
-                "libbase",
-                "libz",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "egl/mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth.audio@2.0-impl",
     owner: "inoi",
     strip: {
@@ -820,162 +745,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.allocator@4.0-impl-mediatek",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.2",
-                "libgralloc_extra",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libged",
-                "libgpud",
-                "libutilscallstack",
-                "libhardware",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libion",
-                "libsync",
-                "libutils",
-                "libnativewindow",
-                "libhidlbase",
-                "libgralloctypes",
-                "libdrm",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.2",
-                "libgralloc_extra",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libged",
-                "libgpud",
-                "libutilscallstack",
-                "libhardware",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libion",
-                "libsync",
-                "libutils",
-                "libnativewindow",
-                "libhidlbase",
-                "libgralloctypes",
-                "libdrm",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw/mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@4.0-impl-mediatek",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.2",
-                "libgralloc_extra",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libged",
-                "libgpud",
-                "libutilscallstack",
-                "libhardware",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libion",
-                "libsync",
-                "libutils",
-                "libnativewindow",
-                "libhidlbase",
-                "libgralloctypes",
-                "libdrm",
-                "arm.graphics-V1-ndk_platform",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.2",
-                "libgralloc_extra",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libged",
-                "libgpud",
-                "libutilscallstack",
-                "libhardware",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libion",
-                "libsync",
-                "libutils",
-                "libnativewindow",
-                "libhidlbase",
-                "libgralloctypes",
-                "libdrm",
-                "arm.graphics-V1-ndk_platform",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw/mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "gralloc.common",
     owner: "inoi",
     strip: {
@@ -1254,44 +1023,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mmagent@1.1",
                 "libdmabufheap",
                 "libaiselector",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw/mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vulkan.mali",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/mt6789/vulkan.mali.so",
-            ],
-            shared_libs: [
-                "libGLES_mali",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so",
-            ],
-            shared_libs: [
-                "libGLES_mali",
                 "libc++",
                 "libc",
                 "libm",
@@ -1774,88 +1505,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libDefaultFpsActor",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libDefaultFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libDefaultFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libFrameRecord",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libFrameRecord.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libFrameRecord.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libJpgEncPipe",
     owner: "inoi",
     strip: {
@@ -1890,47 +1539,6 @@ cc_prebuilt_library_shared {
                 "libjpeg-alpha_vendor",
                 "libion",
                 "libion_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libNoFpsActor",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libNoFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libNoFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -2749,340 +2357,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libged",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libged.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libnativewindow",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libged.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libnativewindow",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgpu_aux",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgpu_aux.so",
-            ],
-            shared_libs: [
-                "libdpframework",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libsync",
-                "libgpud",
-                "libhidlbase",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "vendor.mediatek.hardware.mms@1.5",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpu_aux.so",
-            ],
-            shared_libs: [
-                "libdpframework",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libsync",
-                "libgpud",
-                "libhidlbase",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "vendor.mediatek.hardware.mms@1.5",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgpud",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgpud.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libhidlbase",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpud.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libhidlbase",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloc_extra",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgralloc_extra.so",
-            ],
-            shared_libs: [
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libdmabufheap",
-                "libged",
-                "libutilscallstack",
-                "android.hardware.graphics.common@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloc_extra.so",
-            ],
-            shared_libs: [
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libdmabufheap",
-                "libged",
-                "libutilscallstack",
-                "android.hardware.graphics.common@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloc_metadata",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgralloc_metadata.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloc_metadata.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloctypes_mtk",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgralloctypes_mtk.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloctypes_mtk.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -4241,114 +3515,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@1.0",
                 "libsensorndkbridge",
                 "libdrm",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaiselector",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libaiselector.so",
-            ],
-            shared_libs: [
-                "libpq_prot",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libaiselector.so",
-            ],
-            shared_libs: [
-                "libpq_prot",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdpframework",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libdpframework.so",
-            ],
-            shared_libs: [
-                "libaiselector",
-                "libdmabufheap",
-                "vendor.mediatek.hardware.mmagent@1.0",
-                "libhidlbase",
-                "libhidlmemory",
-                "vendor.mediatek.hardware.pq@2.0",
-                "libgralloc_extra",
-                "libpq_prot",
-                "libutils",
-                "libion",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libutilscallstack",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libdpframework.so",
-            ],
-            shared_libs: [
-                "libaiselector",
-                "libdmabufheap",
-                "vendor.mediatek.hardware.mmagent@1.0",
-                "libhidlbase",
-                "libhidlmemory",
-                "vendor.mediatek.hardware.pq@2.0",
-                "libgralloc_extra",
-                "libpq_prot",
-                "libutils",
-                "libion",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libutilscallstack",
                 "libc++",
                 "libc",
                 "libm",
@@ -5682,141 +4848,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.neuropilot.agent@1.0",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.neuropilot.agent@1.1",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.neuropilot.agent@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.neuropilot.agent@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.neuropilot.agent@1.2",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.neuropilot.agent@1.0",
-                "vendor.mediatek.hardware.neuropilot.agent@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.neuropilot.agent@1.0",
-                "vendor.mediatek.hardware.neuropilot.agent@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.nvram@1.0",
     owner: "inoi",
     strip: {
@@ -6919,6 +5950,456 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libGLES_mali",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/mt6789/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libutils",
+                "liblog",
+                "libdmabufheap",
+                "libion",
+                "libged",
+                "libgpu_aux",
+                "libgpud",
+                "libgralloc_extra",
+                "libladder",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libcutils",
+                "libbase",
+                "libz",
+                "arm.graphics-V1-ndk_platform",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "egl/mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.allocator@4.0-impl-mediatek",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common@1.2",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libged",
+                "libgpud",
+                "libutilscallstack",
+                "libhardware",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libdmabufheap",
+                "libion",
+                "libsync",
+                "libutils",
+                "libnativewindow",
+                "libhidlbase",
+                "libgralloctypes",
+                "libdrm",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw/mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.mapper@4.0-impl-mediatek",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common@1.2",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libged",
+                "libgpud",
+                "libutilscallstack",
+                "libhardware",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libdmabufheap",
+                "libion",
+                "libsync",
+                "libutils",
+                "libnativewindow",
+                "libhidlbase",
+                "libgralloctypes",
+                "libdrm",
+                "arm.graphics-V1-ndk_platform",
+                "android.hardware.graphics.mapper@4.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw/mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vulkan.mali",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/mt6789/vulkan.mali.so",
+            ],
+            shared_libs: [
+                "libGLES_mali",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw/mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libDefaultFpsActor",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libDefaultFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFrameRecord",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libFrameRecord.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNoFpsActor",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libNoFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libged",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libged.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpu_aux",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgpu_aux.so",
+            ],
+            shared_libs: [
+                "libdpframework",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libsync",
+                "libgpud",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "vendor.mediatek.hardware.mms@1.5",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpud",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgpud.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_extra",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloc_extra.so",
+            ],
+            shared_libs: [
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libged",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_metadata",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloc_metadata.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloctypes_mtk",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloctypes_mtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "librcs_interface",
     owner: "inoi",
     strip: {
@@ -7029,6 +6510,74 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaiselector",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mt6789/libaiselector.so",
+            ],
+            shared_libs: [
+                "libpq_prot",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdpframework",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mt6789/libdpframework.so",
+            ],
+            shared_libs: [
+                "libaiselector",
+                "libdmabufheap",
+                "vendor.mediatek.hardware.mmagent@1.0",
+                "libhidlbase",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.0",
+                "libgralloc_extra",
+                "libpq_prot",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libutilscallstack",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvcodec_utility_v3a",
     owner: "inoi",
     strip: {
@@ -7117,6 +6666,93 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     relative_install_path: "mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.neuropilot.agent@1.0",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.neuropilot.agent@1.1",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.neuropilot.agent@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.neuropilot.agent@1.2",
+    owner: "inoi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.neuropilot.agent@1.2.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.neuropilot.agent@1.0",
+                "vendor.mediatek.hardware.neuropilot.agent@1.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
@@ -7374,76 +7010,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libpower",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "hwcomposer.mtk_common",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so",
-            ],
-            shared_libs: [
-                "libprocessgroup_shim",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libdpframework",
-                "libhardware",
-                "libgralloc_extra",
-                "libbinder",
-                "libpower",
-                "libhidlbase",
-                "libhwbinder",
-                "libhidltransport",
-                "libprocessgroup",
-                "libbase",
-                "libnativewindow",
-                "libladder",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@4.0",
-                "vendor.mediatek.hardware.composer_ext@1.0",
-                "libcomposer_ext",
-                "libgralloctypes",
-                "libpqparamparser",
-                "libmml",
-                "libdmabufheap",
-                "libxml2",
-                "libdrm",
-                "libged",
-                "libpq_prot",
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq@2.1",
-                "vendor.mediatek.hardware.pq@2.2",
-                "vendor.mediatek.hardware.pq@2.3",
-                "vendor.mediatek.hardware.pq@2.4",
-                "vendor.mediatek.hardware.pq@2.5",
-                "vendor.mediatek.hardware.pq@2.6",
-                "vendor.mediatek.hardware.pq@2.7",
-                "vendor.mediatek.hardware.pq@2.8",
-                "vendor.mediatek.hardware.pq@2.9",
-                "vendor.mediatek.hardware.pq@2.10",
-                "vendor.mediatek.hardware.pq@2.11",
-                "vendor.mediatek.hardware.pq@2.12",
-                "vendor.mediatek.hardware.pq@2.13",
-                "vendor.mediatek.hardware.pq@2.14",
                 "libc++",
                 "libc",
                 "libm",
@@ -9999,35 +9565,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcomposer_ext",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcomposer_ext.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "vendor.mediatek.hardware.composer_ext@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libconnfem",
     owner: "inoi",
     strip: {
@@ -10944,64 +10481,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libtrm",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmagent",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmmagent.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libdmabufheap",
-                "libneuron_runtime.5",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmml",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmml.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -20517,47 +19996,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkcam_grallocutils",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libmtkcam_grallocutils.so",
-            ],
-            shared_libs: [
-                "libgralloc_extra",
-                "liblog",
-                "libutils",
-                "libsync",
-                "libcutils",
-                "libui",
-                "libmtkcam_stdutils",
-                "libmtkcam_ulog",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.graphics.allocator@2.0",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common@1.2",
-                "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtkcam_hwnode",
     owner: "inoi",
     strip: {
@@ -21884,66 +21322,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpq_cust_base",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libpq_cust_base.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpqparamparser",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libpqparamparser.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libhidlbase",
-                "libgralloc_extra",
-                "libhidlmemory",
-                "vendor.mediatek.hardware.pq@2.15",
-                "libmml",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libstereoinfoaccessor_vsdof",
     owner: "inoi",
     strip: {
@@ -22774,34 +22152,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.composer_ext@1.0",
-    owner: "inoi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.dmc@1.0",
     owner: "inoi",
     strip: {
@@ -23221,15 +22571,6 @@ prebuilt_etc_xml {
     name: "manifest_cameraprovider.xml",
     owner: "inoi",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_cameraprovider.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_hwcomposer.xml",
-    owner: "inoi",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -23778,35 +23119,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
-    owner: "inoi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator@4.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw/mt6789",
     soc_specific: true,
 }
 
@@ -24754,20 +24066,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek",
-    soc_specific: true,
-    installed_location: "bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek",
-    symlink_target: "/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
-}
-
-install_symlink {
-    name: "vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek_mt6789",
-    soc_specific: true,
-    installed_location: "bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
-    symlink_target: "/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789",
-}
-
-install_symlink {
     name: "vendor_bin_hw_camerahalserver",
     soc_specific: true,
     installed_location: "bin/hw/camerahalserver",
@@ -24978,13 +24276,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_egl_libGLES_mali_so",
-    soc_specific: true,
-    installed_location: "lib64/egl/libGLES_mali.so",
-    symlink_target: "/vendor/lib64/egl/mt6789/libGLES_mali.so",
-}
-
-install_symlink {
     name: "vendor_lib64_hw_audio_primary_mt6789_so",
     soc_specific: true,
     installed_location: "lib64/hw/audio.primary.mt6789.so",
@@ -25017,20 +24308,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so",
     symlink_target: "/vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-    symlink_target: "/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
-    symlink_target: "/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
 }
 
 install_symlink {
@@ -25087,13 +24364,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so",
     symlink_target: "/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_vulkan_mali_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/vulkan.mali.so",
-    symlink_target: "/vendor/lib64/hw/mt6789/vulkan.mali.so",
 }
 
 install_symlink {
@@ -26280,13 +25550,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libaiselector_so",
-    soc_specific: true,
-    installed_location: "lib64/libaiselector.so",
-    symlink_target: "/vendor/lib64/mt6789/libaiselector.so",
-}
-
-install_symlink {
     name: "vendor_lib64_libcam_afhal_so",
     soc_specific: true,
     installed_location: "lib64/libcam.afhal.so",
@@ -26644,13 +25907,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libdpframework_so",
-    soc_specific: true,
-    installed_location: "lib64/libdpframework.so",
-    symlink_target: "/vendor/lib64/mt6789/libdpframework.so",
-}
-
-install_symlink {
     name: "vendor_lib64_libeffecthal_base_so",
     soc_specific: true,
     installed_location: "lib64/libeffecthal.base.so",
@@ -26959,13 +26215,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libmtkcam_grallocutils_so",
-    soc_specific: true,
-    installed_location: "lib64/libmtkcam_grallocutils.so",
-    symlink_target: "/vendor/lib64/mt6789/libmtkcam_grallocutils.so",
-}
-
-install_symlink {
     name: "vendor_lib64_libmtkcam_hwnode_so",
     soc_specific: true,
     installed_location: "lib64/libmtkcam_hwnode.so",
@@ -27239,24 +26488,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libpq_cust_base_so",
-    soc_specific: true,
-    installed_location: "lib64/libpq_cust_base.so",
-    symlink_target: "/vendor/lib64/mt6789/libpq_cust_base.so",
-}
-
-install_symlink {
     name: "vendor_lib64_libpq_prot_so",
     soc_specific: true,
     installed_location: "lib64/libpq_prot.so",
     symlink_target: "/vendor/lib64/mt6789/libpq_prot.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libpqparamparser_so",
-    soc_specific: true,
-    installed_location: "lib64/libpqparamparser.so",
-    symlink_target: "/vendor/lib64/mt6789/libpqparamparser.so",
 }
 
 install_symlink {

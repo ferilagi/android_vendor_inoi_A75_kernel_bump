@@ -161,14 +161,8 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/inoi/A75/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
-    vendor/inoi/A75/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
-    vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/inoi/A75/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.samsung.rc \
@@ -361,7 +355,6 @@ PRODUCT_COPY_FILES += \
     vendor/inoi/A75/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
-    libGLES_mali \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1-impl-mediatek \
@@ -377,13 +370,10 @@ PRODUCT_PACKAGES += \
     kmsetkey.trustkernel \
     libSoftGatekeeper \
     local_time.default \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     gralloc.common \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.pq@2.15-impl \
-    vulkan.mali \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
@@ -392,10 +382,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     vendor.sprd.hardware.fingerprintmmi@1.0-impl \
-    libDefaultFpsActor \
-    libFrameRecord \
     libJpgEncPipe \
-    libNoFpsActor \
     libaal_mtk \
     libaedv \
     libalsautils-v31 \
@@ -416,12 +403,6 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libflatbuffers-cpp-mtk \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
     libion_mtk \
@@ -451,8 +432,6 @@ PRODUCT_PACKAGES += \
     libwo \
     arm.graphics-V1-ndk_platform \
     libaalservice \
-    libaiselector \
-    libdpframework \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.eventcallback \
@@ -482,9 +461,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
-    vendor.mediatek.hardware.neuropilot.agent@1.0 \
-    vendor.mediatek.hardware.neuropilot.agent@1.1 \
-    vendor.mediatek.hardware.neuropilot.agent@1.2 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.pq@2.0 \
@@ -505,13 +481,31 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.sprd.hardware.fingerprintmmi@1.0 \
+    libGLES_mali \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    vulkan.mali \
+    libDefaultFpsActor \
+    libFrameRecord \
+    libNoFpsActor \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
     librcs_interface \
     librcs_volte_core \
     libvolte_core_shr \
     libvolte_xdmc_shr \
+    libaiselector \
+    libdpframework \
     libvcodec_utility_v3a \
     libvcodecdrv_v3a \
     libvpudv3a_vcodec \
+    vendor.mediatek.hardware.neuropilot.agent@1.0 \
+    vendor.mediatek.hardware.neuropilot.agent@1.1 \
+    vendor.mediatek.hardware.neuropilot.agent@1.2 \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
@@ -520,7 +514,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
-    hwcomposer.mtk_common \
     hwcomposer.mtk_fold \
     android.hardware.camera.provider@2.6-impl-mediatek \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
@@ -603,7 +596,6 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk-v33 \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
-    libcomposer_ext \
     libconnfem \
     libcrypto-md \
     libcs_cs35l45_intf \
@@ -638,8 +630,6 @@ PRODUCT_PACKAGES += \
     liblibarm_mali_config_sysprops \
     libminiui \
     libmipc \
-    libmmagent \
-    libmml \
     libmmprofile \
     libmnetlink_v104 \
     libmp3dec_mtk \
@@ -957,7 +947,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_featurepolicy \
     libmtkcam_featureutils \
     libmtkcam_fwkutils \
-    libmtkcam_grallocutils \
     libmtkcam_hwnode \
     libmtkcam_hwutils \
     libmtkcam_imem \
@@ -994,8 +983,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_tuning_utils \
     libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_runtime.5 \
-    libpq_cust_base \
-    libpqparamparser \
     libstereoinfoaccessor_vsdof \
     libvainr_model \
     ov16a1q_mipi_raw_IdxMgr \
@@ -1022,7 +1009,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.clientapi@1.0 \
-    vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.dmc@1.0 \
     vendor.mediatek.hardware.dmc@1.1 \
     vendor.mediatek.hardware.dmc@1.2 \
@@ -1047,7 +1033,6 @@ PRODUCT_PACKAGES += \
     manifest_apuware_hmp.xml \
     manifest_apuware_utils.xml \
     manifest_cameraprovider.xml \
-    manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     vendor.sprd.hardware.fingerprintmmi@1.0-service.xml \
     ccci_fsd \
@@ -1066,7 +1051,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustkernel \
     android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1100,8 +1084,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
-    vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
-    vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek_mt6789 \
     vendor_bin_hw_camerahalserver \
     vendor_bin_v3avpud \
     vendor_bin_v3avpud_mt6789 \
@@ -1132,14 +1114,11 @@ PRODUCT_PACKAGES += \
     vendor_lib_libvcodec_utility_v3a_so \
     vendor_lib_libvcodecdrv_v3a_so \
     vendor_lib_libvpudv3a_vcodec_so \
-    vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6789_so \
     vendor_lib64_hw_audio_r_submix_mt6789_so \
     vendor_lib64_hw_fingerprint_mt6789_so \
     vendor_lib64_hw_gatekeeper_default_so \
     vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
-    vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
-    vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_gralloc_common_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
@@ -1148,7 +1127,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
-    vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6789_so \
     vendor_lib64_arm_graphics-V1-ndk_platform_so \
     vendor_lib64_bf20a1_mipi_raw_IdxMgr_so \
@@ -1318,7 +1296,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libaibc_tuning_p3_so \
     vendor_lib64_libaibc_tuning_p4_so \
     vendor_lib64_libaidepth_tuning_so \
-    vendor_lib64_libaiselector_so \
     vendor_lib64_libcam_afhal_so \
     vendor_lib64_libcam_chdr_so \
     vendor_lib64_libcam_feature_utils_so \
@@ -1370,7 +1347,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libcameracustom_so \
     vendor_lib64_libdip_drv_so \
     vendor_lib64_libdip_postproc_so \
-    vendor_lib64_libdpframework_so \
     vendor_lib64_libeffecthal_base_so \
     vendor_lib64_libfeature_face_so \
     vendor_lib64_libfeature_stereo_provider_so \
@@ -1415,7 +1391,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmtkcam_featurepolicy_so \
     vendor_lib64_libmtkcam_featureutils_so \
     vendor_lib64_libmtkcam_fwkutils_so \
-    vendor_lib64_libmtkcam_grallocutils_so \
     vendor_lib64_libmtkcam_hwnode_so \
     vendor_lib64_libmtkcam_hwutils_so \
     vendor_lib64_libmtkcam_imem_so \
@@ -1455,9 +1430,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
     vendor_lib64_libneuron_adapter_mgvi_so \
     vendor_lib64_libneuron_runtime_5_so \
-    vendor_lib64_libpq_cust_base_so \
     vendor_lib64_libpq_prot_so \
-    vendor_lib64_libpqparamparser_so \
     vendor_lib64_libstereoinfoaccessor_vsdof_so \
     vendor_lib64_libvainr_model_so \
     vendor_lib64_ov16a1q_mipi_raw_IdxMgr_so \
